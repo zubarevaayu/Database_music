@@ -3,244 +3,321 @@
 --GENRES
 
 INSERT INTO genre(genre_name)
-VALUES ('Pop music')
+VALUES ('Pop music');
 
 INSERT INTO genre(genre_name)
-VALUES ('Rock music')
+VALUES ('Rock music');
 
 INSERT INTO genre(genre_name)
-VALUES ('Soundtracks')
+VALUES ('Soundtracks');
 
 SELECT *
-FROM genre
+FROM genre;
 
 
 --ARTISTS
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Adele', Null)
+VALUES ('Adele', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('ABBA', Null)
+VALUES ('ABBA', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Rihanna', Null)
+VALUES ('Rihanna', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Nirvana', Null)
+VALUES ('Nirvana', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Madonna', Null)
+VALUES ('Madonna', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Bon Jovi', Null)
+VALUES ('Bon Jovi', Null);
 
 INSERT INTO artist(artist_name, nickname) 
-VALUES ('Imagine Dragons', Null)
+VALUES ('Imagine Dragons', Null);
 
 SELECT *
-FROM artist
+FROM artist;
 
 
 --ARTIST_GENRE
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (1, 1)
+VALUES (1, 1);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (1, 3)
+VALUES (1, 3);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (2, 1)
+VALUES (2, 1);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (2, 3)
+VALUES (2, 3);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (3, 1)
+VALUES (3, 1);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (3, 2)
+VALUES (3, 2);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (4, 2)
+VALUES (4, 2);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (5, 1)
+VALUES (5, 1);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (6, 2)
+VALUES (6, 2);
 
 INSERT INTO artist_genre(artist_id, genre_id)
-VALUES (7, 2)
+VALUES (7, 2);
 
 SELECT *
-FROM artist_genre
+FROM artist_genre;
 
 
 -- ALBUMS
 
 --ABBA
 INSERT INTO album(album_name, album_year)
-VALUES ('Arrival', 1976)  
+VALUES ('Arrival', 1976);
 
 --Adele
 INSERT INTO album(album_name, album_year)
-VALUES ('21', 2011)
+VALUES ('21', 2011);
 
 --Bon Jovi
 INSERT INTO album(album_name, album_year)
-VALUES ('The Ultimate Collection', 2010)
+VALUES ('The Ultimate Collection', 2010);
 
 --Imagine Dragons
 INSERT INTO album(album_name, album_year)
-VALUES ('Origins', 2019)
+VALUES ('Origins', 2019);
 
 --Rihanna 
 INSERT INTO album(album_name, album_year)
-VALUES ('Anti', 2016)
+VALUES ('Anti', 2016);
 
 INSERT INTO album(album_name, album_year)
-VALUES ('Unapologetic', 2012)
+VALUES ('Unapologetic', 2012);
 
 SELECT *
-FROM album
+FROM album;
 
 
 --ARTIST_ALBUM
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (1, 2)
+VALUES (1, 2);
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (2, 1)
+VALUES (2, 1);
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (6, 3)
+VALUES (6, 3);
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (7, 4)
+VALUES (7, 4);
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (3, 5)
+VALUES (3, 5);
 
 INSERT INTO artist_album(artist_id, album_id)
-VALUES (3, 6)
+VALUES (3, 6);
 
 SELECT *
-FROM artist_album
+FROM artist_album;
 
 
 --TRACK
 
 --ABBA
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Dancing Queen', 3.44, 1)
+VALUES ('Dancing Queen', 3.48, 1);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('My love, My life', 3.51, 1)
+VALUES ('My love, My life', 3.51, 1);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Money, money, money', 3.06, 1)
+VALUES ('Money, money, money', 3.06, 1);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Knowing me, knowing you', 4.01, 1)
+VALUES ('Knowing me, knowing you', 4.01, 1);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Mamma Mia', 3.32, 1)
+VALUES ('Mamma Mia', 3.32, 1);
 
 --Adele
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Rolling in the deep', 3.48, 2)
+VALUES ('Rolling in the deep', 3.48, 2);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Skyfall', 4.46, 2)
+VALUES ('Skyfall', 4.46, 2);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Set fire to the rain', 4.03, 2)
+VALUES ('Set fire to the rain', 4.03, 2);
+
 
 --Bon Jovi
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Its my life', 3.43, 3)
+VALUES ('Its my life', 3.43, 3);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Always', 4.48, 3)
+VALUES ('Always', 4.48, 3);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Runaway', 3.52, 3)
+VALUES ('Runaway', 3.52, 3);
+
 
 --Imagine Dragons
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Natural', 3.09, 4)
+VALUES ('Natural', 3.09, 4);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Boomerang', 3.07, 4)
+VALUES ('Boomerang', 3.07, 4);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Machine', 3.01, 4)
+VALUES ('Machine', 3.01, 4);
+
 
 --Rihanna
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Diamonds', 3.45, 6)
+VALUES ('Diamonds', 3.45, 6);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('Consideration', 2.41, 5)
+VALUES ('Consideration', 2.41, 5);
 
 INSERT INTO track(track_name, duration, album_id)
-VALUES ('James Joint', 1.12, 5)
+VALUES ('James Joint', 1.12, 5);
 
 SELECT *
-FROM track
+FROM track;
 
+-- Переводим длительности треков (duration) в секунды
 
+update track
+	set duration = 3.48*60
+	where track_id=1;
+	
+update track
+	set duration = 3.51*60
+	where track_id=2;
+	
+update track
+	set duration = 3.06*60
+	where track_id=3;
+
+update track
+	set duration = 4.01*60
+	where track_id=4;
+
+update track
+	set duration = 3.32*60
+	where track_id=5;
+
+update track
+	set duration = 3.48*60
+	where track_id=6;
+
+update track
+	set duration = 4.46*60
+	where track_id=7;
+
+update track
+	set duration = 4.03*60
+	where track_id=8;
+
+update track
+	set duration = 3.43*60
+	where track_id=9;
+
+update track
+	set duration = 4.48*60
+	where track_id=10;
+
+update track
+	set duration = 3.52*60
+	where track_id=11;
+
+update track
+	set duration = 3.09*60
+	where track_id=12;
+
+update track
+	set duration = 3.07*60
+	where track_id=13;
+
+update track
+	set duration = 3.01*60
+	where track_id=14;
+
+update track
+	set duration = 3.45*60
+	where track_id=15;
+
+update track
+	set duration = 2.41*60
+	where track_id=16;
+
+update track
+	set duration = 1.12*60
+	where track_id=17;
+
+delete from track 
+	where track_id between 18 and 34
+
+	
 --COLLECTION
 
 INSERT INTO collection(collection_name, collection_year)
-VALUES ('The Singles', 2024)
+VALUES ('The Singles', 2024);
 
 INSERT INTO collection(collection_name, collection_year)
-VALUES ('Popular hits 2020', 2020)
+VALUES ('Popular hits 2020', 2020);
 
 INSERT INTO collection(collection_name, collection_year)
-VALUES ('Rock hits', 2019)
+VALUES ('Rock hits', 2019);
 
 INSERT INTO collection(collection_name, collection_year)
-VALUES ('Best soundtracks', 2018)
+VALUES ('Best soundtracks', 2018);
 
 SELECT *
-FROM collection
+FROM collection;
 
 
 --TRACK_COLLECTION
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (1, 1)
+VALUES (1, 1);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (5, 2)
+VALUES (5, 2);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (8, 3)
+VALUES (8, 3);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (6, 4)
+VALUES (6, 4);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (11, 4)
+VALUES (11, 4);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (1, 4)
+VALUES (1, 4);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (3, 4)
+VALUES (3, 4);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (15, 2)
+VALUES (15, 2);
 
 INSERT INTO track_collection(track_id, collection_id)
-VALUES (16, 2)
+VALUES (16, 2);
 
 SELECT *
 FROM track_collection
+
 
 
